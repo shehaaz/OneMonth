@@ -1507,3 +1507,674 @@ Processing by PagesController#home as HTML
   Rendered pages/home.html.erb within layouts/application (0.7ms)
   Rendered layouts/_header.html.erb (1.1ms)
 Completed 200 OK in 64ms (Views: 63.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-12-05 14:50:03 -0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (13.4ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `include' for #<#<Class:0x007f9b91e986d8>:0x007f9b9a073770>):
+    10:         <span class="icon-bar"></span>
+    11:       </button>
+    12:       <%= link_to "Stark Lab", root_path, class: "navbar-brand" %>
+    13:       <% include AutoHtml %>
+    14:     </div>
+    15: 
+    16:     <!-- Collect the nav links, forms, and other content for toggling -->
+  app/views/layouts/_header.html.erb:13:in `_app_views_layouts__header_html_erb___398083694229570953_70153068281740'
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___2123576149995821915_70153073039220'
+
+
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.1ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (34.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (75.6ms)
+
+
+Started GET "/" for ::1 at 2015-12-05 14:53:25 -0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 59ms (Views: 58.9ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-12-05 14:53:27 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aQUfiLPJQs8xuVKqzaVSFlVK1gEInj9IaD4XPf7ecZm5Ph6kMH6Kp+RwltkHTgvbkYih0ASnDUtJ5EXK/8aaCw=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-12-05 14:53:27 -0800
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-12-05 14:53:28 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-12-05 14:58:43 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePins (20151205230240)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "pins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151205230240"]]
+  [1m[36m (0.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/pins" for ::1 at 2015-12-05 15:03:32 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.6ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 252ms (Views: 249.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-12-05 15:03:32 -0800
+
+
+Started GET "/assets/scaffolds.self-d270f12658a0d32266a59825ec9481828974446e973016704b9feae834eb2bfb.css?body=1" for ::1 at 2015-12-05 15:03:32 -0800
+
+
+Started GET "/assets/pins.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-12-05 15:03:32 -0800
+
+
+Started GET "/pins/new" for ::1 at 2015-12-05 15:03:39 -0800
+Processing by PinsController#new as HTML
+  Rendered pins/_form.html.erb (1.7ms)
+  Rendered pins/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 79ms (Views: 76.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/pins" for ::1 at 2015-12-05 15:04:04 -0800
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dzSZqNhz16JKEd4qEcrG01RRP11G2QXrMrdn6dDgcqIUGDnwpt5Qrt43S2ScZYlXuV2qtEP5Ns/HVKxpz2yxqA==", "pin"=>{"description"=>"My first pin"}, "commit"=>"Create Pin"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pins" ("description", "created_at", "updated_at") VALUES (?, ?, ?)  [["description", "My first pin"], ["created_at", "2015-12-05 23:04:04.271133"], ["updated_at", "2015-12-05 23:04:04.271133"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pins/1
+Completed 302 Found in 5ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/pins/1" for ::1 at 2015-12-05 15:04:04 -0800
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 62.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 15:04:09 -0800
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 70ms (Views: 69.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 15:05:05 -0800
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 203ms (Views: 202.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins/1" for ::1 at 2015-12-05 15:06:23 -0800
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 15:06:44 -0800
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTutorials (20151205230947)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "tutorials" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" varchar, "tag" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151205230947"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/tutorial" for ::1 at 2015-12-05 15:10:08 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/tutorial"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Shehaaz/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Shehaaz/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Shehaaz/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.4ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (38.6ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (85.1ms)
+
+
+Started GET "/tutorials" for ::1 at 2015-12-05 15:10:16 -0800
+Processing by TutorialsController#index as HTML
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT "tutorials".* FROM "tutorials"
+  Rendered tutorials/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 170ms (Views: 168.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/tutorials.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-12-05 15:10:16 -0800
+
+
+Started GET "/tutorials/new" for ::1 at 2015-12-05 15:10:22 -0800
+Processing by TutorialsController#new as HTML
+  Rendered tutorials/_form.html.erb (3.0ms)
+  Rendered tutorials/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 76ms (Views: 73.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tutorials" for ::1 at 2015-12-05 15:10:43 -0800
+Processing by TutorialsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cqTA1i9YAluS5FeM+EZv2hF+2tJb3sIwy7nHQsRODCgRiGCOUfWFVwbCwsJ16SBe/HJPO17+8RQ+WgzC28LPIg==", "tutorial"=>{"title"=>"Arduino 101", "body"=>"Tutorial body", "tag"=>"arduino"}, "commit"=>"Create Tutorial"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "tutorials" ("title", "body", "tag", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Arduino 101"], ["body", "Tutorial body"], ["tag", "arduino"], ["created_at", "2015-12-05 23:10:43.665308"], ["updated_at", "2015-12-05 23:10:43.665308"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tutorials/1
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/tutorials/1" for ::1 at 2015-12-05 15:10:43 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tutorials/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials" for ::1 at 2015-12-05 15:10:52 -0800
+Processing by TutorialsController#index as HTML
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT "tutorials".* FROM "tutorials"[0m
+  Rendered tutorials/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 59.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-12-05 15:21:11 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/Users/Shehaaz/ruby_workspace/onemonth/app/controllers/pages_controller.rb:5: syntax error, unexpected =>, expecting keyword_end
+=> "<p>Hey! Checkout out: <a hr...
+  ^):
+  app/controllers/pages_controller.rb:5: syntax error, unexpected =>, expecting keyword_end
+
+
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (15.5ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.6ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.4ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (96.5ms)
+
+
+Started GET "/" for ::1 at 2015-12-05 15:26:54 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 250ms (Views: 242.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials" for ::1 at 2015-12-05 15:27:01 -0800
+Processing by TutorialsController#index as HTML
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT "tutorials".* FROM "tutorials"
+  Rendered tutorials/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 110ms (Views: 107.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tutorials/new" for ::1 at 2015-12-05 15:27:03 -0800
+Processing by TutorialsController#new as HTML
+  Rendered tutorials/_form.html.erb (30.5ms)
+  Rendered tutorials/new.html.erb within layouts/application (32.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 117ms (Views: 116.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tutorials" for ::1 at 2015-12-05 15:27:15 -0800
+Processing by TutorialsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PFhJ4JP+swUHUBdoPDqUFfXygndXo880UiXNfNBWoOVfdOm47VM0CZN2giaxlduRGP4XnlKD/BCnxgb8z9pj7w==", "tutorial"=>{"title"=>"Arduino 101", "body"=>"https://www.youtube.com/watch?v=0D3KfnbTdWw", "tag"=>"ruby"}, "commit"=>"Create Tutorial"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tutorials" ("title", "body", "tag", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Arduino 101"], ["body", "https://www.youtube.com/watch?v=0D3KfnbTdWw"], ["tag", "ruby"], ["created_at", "2015-12-05 23:27:15.023260"], ["updated_at", "2015-12-05 23:27:15.023260"]]
+  [1m[36m (0.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tutorials/2
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/tutorials/2" for ::1 at 2015-12-05 15:27:15 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTutorial Load (0.2ms)[0m  SELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered tutorials/show.html.erb within layouts/application (73.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 146ms (Views: 138.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tutorials/2" for ::1 at 2015-12-05 15:27:49 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered tutorials/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 71ms (Views: 65.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tutorials/2/edit" for ::1 at 2015-12-05 15:27:53 -0800
+Processing by TutorialsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered tutorials/_form.html.erb (2.1ms)
+  Rendered tutorials/edit.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 73ms (Views: 72.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/tutorials/2" for ::1 at 2015-12-05 15:28:33 -0800
+Processing by TutorialsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L6+EYRkCZU/Oq2dpTXZU14nX568bpTy5RRX5yxq2o6ZMgyQ5Z6/iQ1qN8ifA2RtTZNtyRh6FD52w9jJLBTpgrA==", "tutorial"=>{"title"=>"Arduino 101", "body"=>"https://www.youtube.com/watch?v=5F054MNB1QI", "tag"=>"arduino"}, "commit"=>"Update Tutorial", "id"=>"2"}
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "tutorials" SET "body" = ?, "tag" = ?, "updated_at" = ? WHERE "tutorials"."id" = ?[0m  [["body", "https://www.youtube.com/watch?v=5F054MNB1QI"], ["tag", "arduino"], ["updated_at", "2015-12-05 23:28:33.871967"], ["id", 2]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/tutorials/2
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/tutorials/2" for ::1 at 2015-12-05 15:28:33 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered tutorials/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 68ms (Views: 66.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials/a" for ::1 at 2015-12-05 15:28:40 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"a"}
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Tutorial with 'id'=a):
+  app/controllers/tutorials_controller.rb:67:in `set_tutorial'
+
+
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.6ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.0ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (70.7ms)
+
+
+Started GET "/tutorials/1" for ::1 at 2015-12-05 15:28:43 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered tutorials/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials/" for ::1 at 2015-12-05 15:28:48 -0800
+Processing by TutorialsController#index as HTML
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT "tutorials".* FROM "tutorials"
+  Rendered tutorials/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 59.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials/2" for ::1 at 2015-12-05 15:28:50 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered tutorials/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials" for ::1 at 2015-12-05 15:29:01 -0800
+Processing by TutorialsController#index as HTML
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT "tutorials".* FROM "tutorials"
+  Rendered tutorials/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials/1/edit" for ::1 at 2015-12-05 15:29:03 -0800
+Processing by TutorialsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered tutorials/_form.html.erb (1.5ms)
+  Rendered tutorials/edit.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/tutorials/1" for ::1 at 2015-12-05 15:29:33 -0800
+Processing by TutorialsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CzuwngFk2fwvk4ryEtlhDRX7u97iXSVVODJjZI0zQzNoFxDGf8le8Lu1H7yfdi6J+PcuN+d9FnHN0ajkkr+AOQ==", "tutorial"=>{"title"=>"Arduino documentary", "body"=>"https://vimeo.com/18539129", "tag"=>"arduino"}, "commit"=>"Update Tutorial", "id"=>"1"}
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "tutorials" SET "title" = ?, "body" = ?, "updated_at" = ? WHERE "tutorials"."id" = ?  [["title", "Arduino documentary"], ["body", "https://vimeo.com/18539129"], ["updated_at", "2015-12-05 23:29:33.320623"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tutorials/1
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/tutorials/1" for ::1 at 2015-12-05 15:29:33 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tutorials/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials/1/edit" for ::1 at 2015-12-05 15:29:37 -0800
+Processing by TutorialsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered tutorials/_form.html.erb (1.6ms)
+  Rendered tutorials/edit.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 70ms (Views: 68.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials/1" for ::1 at 2015-12-05 15:29:38 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tutorials/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials" for ::1 at 2015-12-05 15:29:40 -0800
+Processing by TutorialsController#index as HTML
+  [1m[36mTutorial Load (0.2ms)[0m  [1mSELECT "tutorials".* FROM "tutorials"[0m
+  Rendered tutorials/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tutorials/1" for ::1 at 2015-12-05 15:29:42 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tutorials/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials/1" for ::1 at 2015-12-05 15:29:44 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered tutorials/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials/1" for ::1 at 2015-12-05 15:30:41 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tutorials/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 72ms (Views: 67.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tutorials" for ::1 at 2015-12-05 15:32:00 -0800
+Processing by TutorialsController#index as HTML
+  [1m[36mTutorial Load (0.2ms)[0m  [1mSELECT "tutorials".* FROM "tutorials"[0m
+  Rendered tutorials/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tutorials/new" for ::1 at 2015-12-05 15:32:02 -0800
+Processing by TutorialsController#new as HTML
+  Rendered tutorials/_form.html.erb (2.2ms)
+  Rendered tutorials/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tutorials" for ::1 at 2015-12-05 15:32:15 -0800
+Processing by TutorialsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H0P5b60gfG3qyBy0IoxJneLcB0JodoLC7eCgVaWTUpt8b1k30437YX7uifqvIwYZD9CSq21WseYYA2vVuh+RkQ==", "tutorial"=>{"title"=>"Arduino image", "body"=>"http://i.imgur.com/jHJpViX.jpg", "tag"=>"arduino"}, "commit"=>"Create Tutorial"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tutorials" ("title", "body", "tag", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Arduino image"], ["body", "http://i.imgur.com/jHJpViX.jpg"], ["tag", "arduino"], ["created_at", "2015-12-05 23:32:15.987691"], ["updated_at", "2015-12-05 23:32:15.987691"]]
+  [1m[35m (0.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/tutorials/3
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/tutorials/3" for ::1 at 2015-12-05 15:32:15 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered tutorials/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials/3" for ::1 at 2015-12-05 15:32:32 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered tutorials/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 75ms (Views: 69.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tutorials/3" for ::1 at 2015-12-05 15:32:33 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered tutorials/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 61.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials/" for ::1 at 2015-12-05 15:32:45 -0800
+Processing by TutorialsController#index as HTML
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT "tutorials".* FROM "tutorials"
+  Rendered tutorials/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 62.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials/3" for ::1 at 2015-12-05 15:32:47 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered tutorials/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 59.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials/" for ::1 at 2015-12-05 15:35:28 -0800
+Processing by TutorialsController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+NameError (uninitialized constant Tutorial::INSERT_SOME_DEFAULT_HERE):
+  app/models/tutorial.rb:11:in `<class:Tutorial>'
+  app/models/tutorial.rb:2:in `<top (required)>'
+  app/controllers/tutorials_controller.rb:7:in `index'
+
+
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.7ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (71.5ms)
+
+
+Started GET "/tutorials/3" for ::1 at 2015-12-05 15:36:21 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered tutorials/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 72ms (Views: 66.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tutorials/" for ::1 at 2015-12-05 15:36:23 -0800
+Processing by TutorialsController#index as HTML
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT "tutorials".* FROM "tutorials"[0m
+  Rendered tutorials/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials/1" for ::1 at 2015-12-05 15:36:26 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tutorials/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 64ms (Views: 63.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-12-05 15:36:33 -0800
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials/" for ::1 at 2015-12-05 15:39:34 -0800
+Processing by TutorialsController#index as HTML
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT "tutorials".* FROM "tutorials"[0m
+  Rendered tutorials/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 66ms (Views: 65.7ms | ActiveRecord: 0.1ms)
