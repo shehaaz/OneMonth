@@ -27,6 +27,9 @@ gem 'bootstrap-sass'
 #Auto_html: Automatically transforms URIs (via domain) and includes the destination resource (Vimeo, YouTube movie, image, ...) in your document
 gem 'auto_html', '~> 1.6', '>= 1.6.4' 
 
+#Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 3.5', '>= 3.5.2'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
