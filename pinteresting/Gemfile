@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #Bootstrap gem
 gem 'bootstrap-sass'
 
+#Auto_html: Automatically transforms URIs (via domain) and includes the destination resource (Vimeo, YouTube movie, image, ...) in your document
+gem 'auto_html', '~> 1.6', '>= 1.6.4' 
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
