@@ -2178,3 +2178,574 @@ Processing by TutorialsController#index as HTML
   Rendered tutorials/index.html.erb within layouts/application (1.3ms)
   Rendered layouts/_header.html.erb (0.4ms)
 Completed 200 OK in 66ms (Views: 65.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-12-05 15:48:09 -0800
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-12-05 15:52:37 -0800
+Processing by PinsController#new as HTML
+  Rendered pins/_form.html.erb (1.9ms)
+  Rendered pins/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 71ms (Views: 67.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:03:50 -0800
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 67ms (Views: 59.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins/1" for ::1 at 2015-12-05 16:03:52 -0800
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-12-05 16:03:59 -0800
+Processing by PinsController#new as HTML
+  Rendered pins/_form.html.erb (2.1ms)
+  Rendered pins/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 67ms (Views: 66.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-12-05 16:04:46 -0800
+Processing by PinsController#new as HTML
+  Rendered pins/_form.html.erb (9.3ms)
+  Rendered pins/new.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/Shehaaz/ruby_workspace/onemonth/app/views/pins/_form.html.erb:19: syntax error, unexpected tLABEL, expecting '='
+...ffer.append=( f.submit , class: "btn btn-primary btn-lg");@o...
+...                               ^):
+  app/views/pins/_form.html.erb:19: syntax error, unexpected tLABEL, expecting '='
+  app/views/pins/new.html.erb:3:in `_app_views_pins_new_html_erb___2080395748865744769_70115224232760'
+
+
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.1ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.6ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (71.9ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:05:33 -0800
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 66ms (Views: 65.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins/1" for ::1 at 2015-12-05 16:05:34 -0800
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 64.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins/1/edit" for ::1 at 2015-12-05 16:05:37 -0800
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/_form.html.erb (0.9ms)
+  Rendered pins/edit.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/Shehaaz/ruby_workspace/onemonth/app/views/pins/_form.html.erb:19: syntax error, unexpected tLABEL, expecting '='
+...ffer.append=( f.submit , class: "btn btn-primary");@output_b...
+...                               ^):
+  app/views/pins/_form.html.erb:19: syntax error, unexpected tLABEL, expecting '='
+  app/views/pins/edit.html.erb:3:in `_app_views_pins_edit_html_erb___3624591886647014138_70115236414160'
+
+
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.7ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.0ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (70.6ms)
+
+
+Started GET "/pins/1/edit" for ::1 at 2015-12-05 16:05:37 -0800
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/_form.html.erb (1.0ms)
+  Rendered pins/edit.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/Shehaaz/ruby_workspace/onemonth/app/views/pins/_form.html.erb:19: syntax error, unexpected tLABEL, expecting '='
+...ffer.append=( f.submit , class: "btn btn-primary");@output_b...
+...                               ^):
+  app/views/pins/_form.html.erb:19: syntax error, unexpected tLABEL, expecting '='
+  app/views/pins/edit.html.erb:3:in `_app_views_pins_edit_html_erb___3624591886647014138_70115237249400'
+
+
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.7ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (45.1ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (86.0ms)
+
+
+Started GET "/pins/" for ::1 at 2015-12-05 16:06:21 -0800
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-12-05 16:06:22 -0800
+Processing by PinsController#new as HTML
+  Rendered pins/_form.html.erb (1.6ms)
+  Rendered pins/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 66ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:06:47 -0800
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:07:16 -0800
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 59.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:07:47 -0800
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:08:04 -0800
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 69ms (Views: 68.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins/1/edit" for ::1 at 2015-12-05 16:08:13 -0800
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/_form.html.erb (2.0ms)
+  Rendered pins/edit.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:09:55 -0800
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 58.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:10:35 -0800
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:10:52 -0800
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 64ms (Views: 63.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:12:23 -0800
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:13:49 -0800
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:15:52 -0800
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:17:15 -0800
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 70ms (Views: 69.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:17:21 -0800
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 60.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:18:41 -0800
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 59.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:18:42 -0800
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 69ms (Views: 68.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:19:42 -0800
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:20:21 -0800
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 55.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins/1" for ::1 at 2015-12-05 16:20:54 -0800
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 69ms (Views: 68.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pins/1/edit" for ::1 at 2015-12-05 16:20:56 -0800
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/_form.html.erb (1.0ms)
+  Rendered pins/edit.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 60.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins/1" for ::1 at 2015-12-05 16:20:58 -0800
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:20:59 -0800
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 74ms (Views: 73.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:21:15 -0800
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 54.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:21:17 -0800
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 71ms (Views: 70.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-12-05 16:21:29 -0800
+Processing by PinsController#new as HTML
+  Rendered pins/_form.html.erb (1.0ms)
+  Rendered pins/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 72ms (Views: 71.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pins" for ::1 at 2015-12-05 16:21:32 -0800
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gXJDhsWPySN2NSCN77YeDAZ5F38TisYyfG9prIzNawviXuPeuyJOL+ITtcNiGVGI63WClhaq9RaJjKIsk0GoAQ==", "pin"=>{"description"=>"Smart Fridge "}, "commit"=>"Create Pin"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "pins" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "Smart Fridge "], ["created_at", "2015-12-06 00:21:32.608972"], ["updated_at", "2015-12-06 00:21:32.608972"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/pins/2
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/pins/2" for ::1 at 2015-12-05 16:21:32 -0800
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pins/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 66ms (Views: 65.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins" for ::1 at 2015-12-05 16:21:34 -0800
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins/1" for ::1 at 2015-12-05 16:22:38 -0800
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-12-05 16:22:42 -0800
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 64ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-12-05 16:22:49 -0800
+Processing by PinsController#new as HTML
+  Rendered pins/_form.html.erb (1.7ms)
+  Rendered pins/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-12-05 16:25:19 -0800
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 72ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tutorials/" for ::1 at 2015-12-05 17:51:10 -0800
+Processing by TutorialsController#index as HTML
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT "tutorials".* FROM "tutorials"
+  Rendered tutorials/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `body_html' for "https://vimeo.com/18539129":String):
+    16:     <% @tutorials.each do |tutorial| %>
+    17:       <tr>
+    18:         <td><%= tutorial.title %></td>
+    19:         <td><%= tutorial.body.body_html %></td>
+    20:         <td><%= tutorial.tag %></td>
+    21:         <td><%= link_to 'Show', tutorial %></td>
+    22:         <td><%= link_to 'Edit', edit_tutorial_path(tutorial) %></td>
+  app/views/tutorials/index.html.erb:19:in `block in _app_views_tutorials_index_html_erb__815530710982438123_70115215511800'
+  app/views/tutorials/index.html.erb:16:in `_app_views_tutorials_index_html_erb__815530710982438123_70115215511800'
+
+
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.1ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (33.7ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (75.6ms)
+
+
+Started GET "/tutorials/" for ::1 at 2015-12-05 17:51:32 -0800
+Processing by TutorialsController#index as HTML
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT "tutorials".* FROM "tutorials"[0m
+  Rendered tutorials/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/tutorials/3" for ::1 at 2015-12-05 17:51:59 -0800
+Processing by TutorialsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VlPGXRQu3itkpINPg3CU84te6Bs77INls7I0QDs+D0c1f2YFaoNZJ/CCFgEO39t3ZlJ98j7MsEFGUf/AJLLMTQ==", "id"=>"3"}
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "tutorials" WHERE "tutorials"."id" = ?  [["id", 3]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tutorials
+Completed 302 Found in 5ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/tutorials" for ::1 at 2015-12-05 17:51:59 -0800
+Processing by TutorialsController#index as HTML
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT "tutorials".* FROM "tutorials"
+  Rendered tutorials/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 67ms (Views: 66.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials" for ::1 at 2015-12-05 19:56:11 -0800
+Processing by TutorialsController#index as HTML
+  [1m[36mTutorial Load (0.3ms)[0m  [1mSELECT "tutorials".* FROM "tutorials"[0m
+  Rendered tutorials/index.html.erb within layouts/application (15.5ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `pin' for #<#<Class:0x007f89f20336e8>:0x007f89ebef7938>):
+    21:       </tr>
+    22:       <tr>  
+    23:         <div class="btn-group">
+    24:         <td><%= link_to 'Show', pin, class: "btn btn-primary btn-sm" %></td>
+    25:         <td><%= link_to 'Edit', edit_pin_path(pin), class: "btn btn-primary btn-sm" %></td>
+    26:         <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary btn-sm" %></td>
+    27:         </div>
+  app/views/tutorials/index.html.erb:24:in `block in _app_views_tutorials_index_html_erb__815530710982438123_70115172789540'
+  app/views/tutorials/index.html.erb:16:in `_app_views_tutorials_index_html_erb__815530710982438123_70115172789540'
+
+
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.6ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (72.1ms)
+
+
+Started GET "/tutorials" for ::1 at 2015-12-05 19:57:05 -0800
+Processing by TutorialsController#index as HTML
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT "tutorials".* FROM "tutorials"
+  Rendered tutorials/index.html.erb within layouts/application (14.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `pin' for #<#<Class:0x007f89f20336e8>:0x007f89ef2dfae8>):
+    22:       <tr>  
+    23:         <div class="btn-group">
+    24:         <td><%= link_to 'Show', tutorial, class: "btn btn-primary btn-sm" %></td>
+    25:         <td><%= link_to 'Edit', edit_tutorial_path(pin), class: "btn btn-primary btn-sm" %></td>
+    26:         <td><%= link_to 'Destroy', tutorial, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary btn-sm" %></td>
+    27:         </div>
+    28:       </tr>
+  app/views/tutorials/index.html.erb:25:in `block in _app_views_tutorials_index_html_erb__815530710982438123_70115199984800'
+  app/views/tutorials/index.html.erb:16:in `_app_views_tutorials_index_html_erb__815530710982438123_70115199984800'
+
+
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.1ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (33.1ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Shehaaz/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (74.5ms)
+
+
+Started GET "/tutorials" for ::1 at 2015-12-05 19:57:12 -0800
+Processing by TutorialsController#index as HTML
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT "tutorials".* FROM "tutorials"[0m
+  Rendered tutorials/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 77ms (Views: 76.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials" for ::1 at 2015-12-05 19:57:22 -0800
+Processing by TutorialsController#index as HTML
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT "tutorials".* FROM "tutorials"
+  Rendered tutorials/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 64ms (Views: 63.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials/2" for ::1 at 2015-12-05 19:57:31 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTutorial Load (0.1ms)[0m  [1mSELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered tutorials/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tutorials/1" for ::1 at 2015-12-05 19:57:35 -0800
+Processing by TutorialsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTutorial Load (0.1ms)[0m  SELECT  "tutorials".* FROM "tutorials" WHERE "tutorials"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tutorials/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.1ms)
